@@ -1,0 +1,86 @@
+package myScanner;
+import java.util.Scanner;
+public class Exercise3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		/*Guna scanner input:
+    Masukkan dua subject dan markah
+    Nyatakan subjek mana yang lebih besar markah dan mana yang lebih kecil
+    Nyatakan subjek yang mempunyai markah lebih besar daripada 50, calon di kira lulus
+    Nyatakan subjek mana yang lulus dan yang mana gagal
+    
+    Kira purata markah. Markah 80-100 adalah Gred A, markah 60-79 adalah Gred B 
+    dan markah 50-59 adalah gred C. Lain2 markah adalah Gagal. */
+		
+		Scanner input = new Scanner (System.in);
+		
+		String subject1, subject2;
+		int mark1, mark2;
+		double averagescore;
+		
+		System.out.println("Enter your first subject: ");
+		subject1 = input.next();
+		
+		System.out.println("Enter the marks of first subject: ");
+		mark1 = input.nextInt();
+		
+		System.out.println("Enter your second subject: ");
+		subject2 = input.next();
+		
+		System.out.println("Enter the marks of second subject: ");
+		mark2 = input.nextInt();
+		
+		if (mark1 > mark2)
+		{
+			System.out.println("Your first subject which is " +subject1+ " have higher mark");
+		}
+		else if (mark2 > mark1)
+		{
+			System.out.println("Your second subject which is " +subject2+ " have higher mark");
+		}
+		if (mark1 > 50)
+		{
+			System.out.println("You passed your " +subject1+ " subject");
+		}
+		else if (mark2 > 50)
+		{
+			System.out.println("You passed your " +subject2+ " subject");
+		}
+		if (mark1 <= 50)
+		{
+			System.out.println("Your " +subject1+ " is failed");
+		}
+		else if (mark2 <= 50)
+		{
+			System.out.println("Your " +subject2+ " is failed");
+		}
+		if ((mark1 <= 50) && (mark2 <=50))
+		{
+			System.out.println("Your both subjects are failed");
+		}
+		
+		averagescore = (mark1+mark2)/2;
+			System.out.println("Your average marks for two subjects is " +averagescore);
+		
+		if ((averagescore<=100) && (averagescore>=80))
+		{
+			System.out.println("You got A");
+		}
+		else if ((averagescore<=79) && (averagescore>=60))
+		{
+			System.out.println("You got B");
+		}
+		else if ((averagescore<=59) && (averagescore>=50))
+		{
+			System.out.println("You got C");
+		}
+		else 
+		{
+			System.out.println("You are failed");
+		}
+		
+	}
+
+}
