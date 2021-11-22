@@ -1,0 +1,33 @@
+package myScanner;
+import java.util.Scanner;
+public class SwitchExercise {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner input = new Scanner (System.in);
+		
+		int num;
+		System.out.println("Enter a number: ");
+		num=input.nextInt();
+		
+		switch (num) {
+		case 10:
+			System.out.println("Number is 10");
+			break;
+			
+		case 20:
+			System.out.println("Number is 20");
+			break;
+		
+		case 30:
+			System.out.println("Number is 30");
+			break;
+			
+		default:
+			System.out.println("Invalid number");
+			break;
+		}
+	}
+
+}
