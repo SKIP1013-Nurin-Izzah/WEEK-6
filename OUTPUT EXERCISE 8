@@ -1,0 +1,9 @@
+Enter your grade: 
+A
+marks >=90
+marks >=80 and less than 90
+marks >=70 and less than 80
+marks >=60 and less than 70
+marks >=50 and less than 60
+marks <=40
+Invalid marks
